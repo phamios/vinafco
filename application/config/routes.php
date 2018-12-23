@@ -53,5 +53,10 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['home/sanluong'] = 'home/demension';
 $route['home/kiemtradauvao'] = 'home/demensionreview';
+$route['home/danhsachsp'] = 'home/listdemension';
+$route['home/quanlygiavanchuyen'] = 'home/costLogistic';
+$route['home/quanlyvungmien'] = 'home/locationman';
+$route['home/datvanchuyen'] = 'home/booklogistic';
+$route['home/baogiaketqua'] = 'home/bookresult';
 
 $route['translate_uri_dashes'] = FALSE;

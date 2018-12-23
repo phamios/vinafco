@@ -8,12 +8,72 @@
             <li class="nav-title">Logistic</li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo site_url('home/sanluong');?>">
-                <i class="nav-icon icon-drop"></i> Nhập sản lượng</a>
+                <i class="nav-icon icon-drop"></i> Nhập Excel sản lượng</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="nav-icon icon-pencil"></i>Cấu hình</a>
+              <a class="nav-link" href="<?php echo site_url('home/demensionmanual');?>">
+                <i class="nav-icon icon-drop"></i> Nhập sản lượng</a>
             </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo site_url('home/danhsachsp');?>">
+                <i class="nav-icon icon-drop"></i> Danh sách sản lượng</a>
+            </li>
+
+            <li class="nav-title">Cấu hình</li>
+            <li class="nav-item nav-dropdown">
+              <a class="nav-link nav-dropdown-toggle" href="#">
+                <i class="nav-icon icon-puzzle"></i> Cấu hình đơn giá</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/group');?>">
+                    <i class="nav-icon icon-puzzle"></i> Q/L Group</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/quanlygiavanchuyen');?>">
+                    <i class="nav-icon icon-puzzle"></i> Q/L Giá vận chuyển</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/transaction');?>">
+                    <i class="nav-icon icon-puzzle"></i> Q/L phương tiện</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/quanlyvungmien');?>">
+                    <i class="nav-icon icon-puzzle"></i> Q/L Vùng miền</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/formula');?>">
+                    <i class="nav-icon icon-puzzle"></i> Cấu hình Formula</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-title">Người dùng</li>
+            <li class="nav-item nav-dropdown">
+              <a class="nav-link nav-dropdown-toggle" href="#">
+                <i class="nav-icon icon-puzzle"></i> Q/L Người dùng</a>
+              <ul class="nav-dropdown-items">
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/userlist');?>">
+                    <i class="nav-icon icon-puzzle"></i> Danh sách</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="<?php echo site_url('home/adduser');?>">
+                    <i class="nav-icon icon-puzzle"></i> Thêm mới</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo site_url('home/logout');?>">
+                <i class="nav-icon icon-speedometer"></i> Thoát hệ thống 
+              </a>
+            </li>
+
+
             <!-- <li class="nav-title">Components</li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#">

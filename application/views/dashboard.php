@@ -31,7 +31,11 @@
     </header>
     <div class="app-body">
       <div class="sidebar">
-        <?php $this->load->view('widget/menu');?>
+        <?php if($this->session->userdata('admin_name') == "admin" ):?>
+          <?php $this->load->view('widget/menu');?>
+        <?php else:?>
+        <?php $this->load->view('widget/submenu');?>
+        <?php endif;?>
       </div>
       <!------------MAIN----------------------->
       <main class="main">
@@ -42,9 +46,44 @@
             <?php if ($this->router->fetch_method() == 'demension'): ?>
                 <?php $this->load->view('demension/index');?>
             <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'demensionmanual'): ?>
+                <?php $this->load->view('demension/manual');?>
+            <?php endif; ?> 
             <?php if ($this->router->fetch_method() == 'demensionreview'): ?>
                 <?php $this->load->view('demension/review');?>
             <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'listdemension'): ?>
+                <?php $this->load->view('demension/list');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'costLogistic'): ?>
+                <?php $this->load->view('group/logistic_cost');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'group'): ?>
+                <?php $this->load->view('group/group');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'booklogistic'): ?>
+                <?php $this->load->view('book/index');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'bookresult'): ?>
+                <?php $this->load->view('book/result');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'transaction'): ?>
+                <?php $this->load->view('group/transaction');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'locationman'): ?>
+                <?php $this->load->view('group/location');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'formula'): ?>
+                <?php $this->load->view('group/formula');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'userlist'): ?>
+                <?php $this->load->view('user/index');?>
+            <?php endif; ?> 
+            <?php if ($this->router->fetch_method() == 'adduser'): ?>
+                <?php $this->load->view('user/addnew');?>
+            <?php endif; ?> 
+            
+            
             
         </div>
       </main>

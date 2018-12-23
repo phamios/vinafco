@@ -1,50 +1,10 @@
-<div class="container-fluid">
-<div class="card">
-    <div class="animated fadeIn">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-12 col-xl mb-3 mb-xl-0">
-                    <button class="btn btn-success mb-1" type="button" data-toggle="modal" data-target="#successModal">Cập nhật</button>
-                </div>
-                <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
-                    <button class="btn btn-block btn-light" type="button">Hủy nhập</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>    
-</div>
-
-<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-success" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title">Thông báo</h4>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <p>Hệ thống đã cập nhật dữ liệu thành công !</p>
-        </div>
-        <div class="modal-footer">
-            <a href="<?php echo site_url('home/danhsachsp');?>" class="btn btn-secondary"  >Refresh lại trang</a>
-            <!-- <button  type="button" ></button>  -->
-        </div>
-        </div>
-        <!-- /.modal-content-->
-    </div>
-    <!-- /.modal-dialog-->
-</div>
+ 
 <!------------------------------------------------------------------------------------------------------>
 
 <div class="row">
     <div class="col-lg-12">
     <div class="card">
-        <div class="card-header">
-        <i class="fa fa-align-justify"></i> Kiểm tra dữ liệu đầu vào 
-                
-        </div>
+ 
         <div class="card-body">
         
         <table class="table table-responsive-sm table-bordered table-striped table-sm">
